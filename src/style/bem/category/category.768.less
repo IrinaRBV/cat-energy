@@ -1,14 +1,16 @@
 .category {
   position: relative;
-  padding: 20px;
+  padding: 60px 50px; //
   background-color: #f2f2f2;
 
   &__wrap-icon {
     position: absolute;
-    top: 15px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
+    top: 50%; //
+    right: 50px; //
+    left: auto;//
+    transform: translateY(-50%); //
+    width: 200px; //
+    height: 200px; //
   }
 
   &__icon {
@@ -25,12 +27,12 @@
     }
 
     &--cat-slim::before {
-      top: 0;
+      top: -10px; //
       left: 50%;
       transform: translateX(-50%);
-      width: 35px;
-      height: 49px;
-      background-image: url("../img/svg/sphinx.svg");
+      width: 140px; //
+      height: 194px; //
+      background-image: url("../img/cat-slim.png"); //
       background-repeat: no-repeat;
     }
 
@@ -38,31 +40,35 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 68px;
-      height: 28px;
-      background-image: url("../img/svg/panther.svg");
+      width: 268px; //
+      height: 112px; //
+      background-image: url("../img/cat-pro.png"); //
       background-repeat: no-repeat;
     }
   }
 
+  &__wrap-content { //
+    width: 380px;
+  }
+
   &__title {
-    margin: 0 0 30px 70px;
-    font-size: 24px;
+    margin: 0 0 30px; //
+    font-size: 36px; //
     line-height: 36px;
     text-transform: uppercase;
     font-weight: 400;
   }
 
   &__text {
-    margin: 0 0 20px;
-    padding: 0 0 20px;
-    border-bottom: 1px solid #c4c4c4;
+    margin: 0 0 60px; //
+    padding: 0; //
+    border-bottom: none; //
   }
 
   &__link {
     position: relative;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px; //
+    line-height: 20px; //
     color: #111111;
     text-decoration: none;
     text-transform: uppercase;
