@@ -1,89 +1,48 @@
 .category {
-  position: relative;
-  padding: 60px 50px; //
-  background-color: #f2f2f2;
+  padding: 60px 50px;
 
   &__wrap-icon {
-    position: absolute;
-    top: 50%; //
-    right: 50px; //
-    left: auto;//
-    transform: translateY(-50%); //
-    width: 200px; //
-    height: 200px; //
+    top: 50%;
+    right: 50px;
+    left: auto;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
   }
 
   &__icon {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #68b738;
-
-    &::before {
-      position: absolute;
-      content: "";
-    }
 
     &--cat-slim::before {
-      top: -10px; //
-      left: 50%;
-      transform: translateX(-50%);
-      width: 140px; //
-      height: 194px; //
-      background-image: url("../img/cat-slim.png"); //
-      background-repeat: no-repeat;
+      top: -10px;
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/cat-slim.png");
     }
 
     &--cat-pro::before {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 268px; //
-      height: 112px; //
-      background-image: url("../img/cat-pro.png"); //
-      background-repeat: no-repeat;
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/cat-pro.png");
     }
   }
 
-  &__wrap-content { //
+  &__wrap-content {
     width: 380px;
   }
 
   &__title {
-    margin: 0 0 30px; //
-    font-size: 36px; //
-    line-height: 36px;
-    text-transform: uppercase;
-    font-weight: 400;
+    margin: 0 0 30px;
+    font-size: 36px;
   }
 
   &__text {
-    margin: 0 0 60px; //
-    padding: 0; //
-    border-bottom: none; //
+    margin: 0 0 60px;
+    padding: 0;
+    border-bottom: none;
   }
 
   &__link {
-    position: relative;
-    font-size: 20px; //
-    line-height: 20px; //
-    color: #111111;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 25px;
-      height: 12px;
-      top: 50%;
-      right: -40px;
-      transform: translateY(-50%);
-      background-image: url("../img/svg/right-arrow-long.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
+    font-size: 20px;
+    line-height: 20px;
   }
 }

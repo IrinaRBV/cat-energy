@@ -1,32 +1,29 @@
 .advantages {
-  padding: 55px 0; //
+  padding: 55px 0 0;
+  border-bottom: 1px solid #c4c4c4;
 
   &__title {
-    margin: 0 0 75px; //
+    margin: 0 0 75px;
   }
 
   &__list {
-    display: flex; //
-    flex-wrap: wrap; //
-    max-width: 720px; //
-    justify-content: space-between; //
-    margin: 0 auto; //
-    padding: 0;
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   &__item {
-    position: relative; //
-    display: flex;
-    align-items: flex-start; //
-    flex-direction: column; //
-    width: 245px; //
-    margin: 0 0 135px; //
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 48%;
+    margin: 0 0 135px;
 
-    &::before { //
+    &::before {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 100px;
       height: 240px;
       font-size: 280px;
       line-height: 206px;
@@ -34,64 +31,30 @@
       z-index: -1;
     }
 
-    &--one::before { //
+    &--one::before {
       content: "1";
     }
 
-    &--two::before { //
+    &--two::before {
       content: "2";
     }
 
-    &--three::before { //
+    &--three::before {
       content: "3";
     }
 
-    &--four::before { //
+    &--four::before {
       content: "4";
     }
   }
 
   &__icon {
-    position: relative;
-    display: block;
-    flex-shrink: 0;
-    margin: 0 0 35px 0; //
-    width: 80px; //
-    height: 80px; //
-    background-color: #68b738;
-
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      top: 50%;
-      left: 50%;
-      width: 35px;
-      height: 35px;
-      transform: translate(-50%, -50%);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--1::before {
-      background-image: url("../img/svg/advantage-1.svg");
-    }
-
-    &--2::before {
-      background-image: url("../img/svg/advantage-2.svg");
-    }
-
-    &--3::before {
-      background-image: url("../img/svg/advantage-3.svg");
-    }
-
-    &--4::before {
-      background-image: url("../img/svg/advantage-4.svg");
-    }
+    margin: 0 0 35px 0;
+    width: 80px;
+    height: 80px;
   }
 
   &__text {
-    margin: 0;
-    padding: 0 0 0 0;
+    width: calc(100% - 100px);
   }
 }
