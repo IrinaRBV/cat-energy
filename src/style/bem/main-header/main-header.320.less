@@ -1,6 +1,6 @@
 .main-header {
   position: relative;
-  
+
   &__menu {
     display: flex;
     flex-direction: column;
@@ -16,8 +16,7 @@
     margin: 0 25px 10px;
   }
 
-  &__button-open {
-    position: relative;
+  &__button {
     padding: 0;
     width: 24px;
     height: 18px;
@@ -26,23 +25,36 @@
     border: none;
     background-color: inherit;
 
-    &::before {
-      position: absolute;
-      content: "";
+    &--open,
+    &--close{
       display: block;
       width: 25px;
       height: 25px;
-      top: 0;
-      left: 0;
+    }
+
+    &--open {
       background-image: url("../img/svg/mobile-menu.svg");
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-position: center;
+    }
+
+    &--close {
+      background-image: url("../img/svg/m-close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
   &__nav {
-    display: none;
     width: 100%;
     margin: 0;
+
+    &--close {
+      display: none;
+    }
+
+    &--open {
+      display: block;
+    }
   }
 }

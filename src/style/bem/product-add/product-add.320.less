@@ -1,8 +1,16 @@
 .product-add {
+  width: 90%;
+  max-width: 360px;
+  margin: 0 auto;
+
+  &__wrap {
+    text-align: center;
+  }
 
   &__plus {
     position: relative;
     display: block;
+    margin: 0 auto 20px;
     width: 32px;
     height: 32px;
 
@@ -25,12 +33,20 @@
   }
 
   &__title {
+    margin: 0 0 10px;
     font-size: 16px;
     line-height: 20px;
     color: #111111;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 0 20px;
   }
 
   &__button {
+    width: 100%;
+    padding: 10px;
     background-color: #f2f2f2;
     color: #222222;
   }

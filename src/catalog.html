@@ -20,9 +20,9 @@
             </picture>
           </a>
         </div>
-        <button class="main-header__button-open" type="button">Меню</button>
+        <button class="main-header__button main-header__button--open" type="button">Меню</button>
       </div>
-      <nav class="main-header__nav">
+      <nav class="main-header__nav main-header__nav--close">
         <ul class="main-menu">
           <li class="main-menu__item"><a class="main-menu__link main-menu__link--color" href="index.html">Главная</a></li>
           <li class="main-menu__item"><a class="main-menu__link main-menu__link--active main-menu__link--color" href="#">Каталог продукции</a></li>
@@ -41,7 +41,9 @@
             <div class="product">
               <!-- <img class="product__img" src=""> -->
               <div class="product__wrap">
-                <img class="product__img" src="img/product/catalog-1-desktop.png" alt="Cat Energy pro 500 г">
+                <div class="product__photo">
+                  <img class="product__img" src="img/product/catalog-1-desktop.png" alt="Cat Energy pro 500 г">
+                </div>
                 <div class="product__desc">
                   <h3 class="product__title">Cat Energy pro 500 г</h3>
                   <ul class="product__desc-list">
@@ -62,9 +64,10 @@
           </li>
           <li class="catalog__item">
             <div class="product">
-              <!-- <img class="product__img" src=""> -->
               <div class="product__wrap">
-                <img class="product__img product__img--big" src="img/product/catalog-2-desktop.png" alt="Cat Energy pro 1000 г">
+                <div class="product__photo">
+                  <img class="product__img product__img--big" src="img/product/catalog-2-desktop.png" alt="Cat Energy pro 1000 г">
+                </div>
                 <div class="product__desc">
                   <h3 class="product__title">Cat Energy pro 1000 г</h3>
                   <ul class="product__desc-list">
@@ -85,9 +88,10 @@
           </li>
           <li class="catalog__item">
             <div class="product">
-              <!-- <img class="product__img" src=""> -->
               <div class="product__wrap">
-                <img class="product__img" src="img/product/catalog-3-desktop.png" alt="Cat Energy pro 500 г">
+                <div class="product__photo">
+                  <img class="product__img" src="img/product/catalog-3-desktop.png" alt="Cat Energy pro 500 г">
+                </div>
                 <div class="product__desc">
                   <h3 class="product__title">Cat Energy pro 500 г</h3>
                   <ul class="product__desc-list">
@@ -108,9 +112,10 @@
           </li>
           <li class="catalog__item">
             <div class="product">
-              <!-- <img class="product__img" src=""> -->
               <div class="product__wrap">
-                <img class="product__img product__img--big" src="img/product/catalog-4-desktop.png" alt="Cat Energy pro 1000 г">
+                <div class="product__photo">
+                  <img class="product__img product__img--big" src="img/product/catalog-4-desktop.png" alt="Cat Energy pro 1000 г">
+                </div>
                 <div class="product__desc">
                   <h3 class="product__title">Cat Energy pro 1000 г</h3>
                   <ul class="product__desc-list">
@@ -131,9 +136,10 @@
           </li>
           <li class="catalog__item">
             <div class="product">
-              <!-- <img class="product__img" src=""> -->
               <div class="product__wrap">
-                <img class="product__img" src="img/product/catalog-5-desktop.png" alt="Cat Energy slim 500 г">
+                <div class="product__photo">
+                  <img class="product__img" src="img/product/catalog-5-desktop.png" alt="Cat Energy slim 500 г">
+                </div>
                 <div class="product__desc">
                   <h3 class="product__title">Cat Energy slim 500 г</h3>
                   <ul class="product__desc-list">
@@ -154,9 +160,10 @@
           </li>
           <li class="catalog__item">
             <div class="product">
-              <!-- <img class="product__img" src=""> -->
               <div class="product__wrap">
-                <img class="product__img product__img--big" src="img/product/catalog-6-desktop.png" alt="Cat Energy slim 1000 г">
+                <div class="product__photo">
+                  <img class="product__img product__img--big" src="img/product/catalog-6-desktop.png" alt="Cat Energy slim 1000 г">
+                </div>
                 <div class="product__desc">
                   <h3 class="product__title">Cat Energy slim 1000 г</h3>
                   <ul class="product__desc-list">
@@ -177,9 +184,10 @@
           </li>
           <li class="catalog__item">
             <div class="product">
-              <!-- <img class="product__img" src=""> -->
               <div class="product__wrap">
-                <img class="product__img" src="img/product/catalog-7-desktop.png" alt="Cat Energy slim 500 г">
+                <div class="product__photo">
+                  <img class="product__img" src="img/product/catalog-7-desktop.png" alt="Cat Energy slim 500 г">
+                </div>
                 <div class="product__desc">
                   <h3 class="product__title">Cat Energy slim 500 г</h3>
                   <ul class="product__desc-list">
@@ -215,8 +223,10 @@
     </section>
 
     <section class="extra">
-      <h2 class="extra__title">Дополнительные товары</h2>
-      <div class="container">
+      <h2 class="extra__title">
+        Дополнительные товары
+      </h2>
+      <div class="extra__container container">
         <ul class="extra__list">
           <li class="extra__item">
             <div class="extra-product">
@@ -317,5 +327,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
