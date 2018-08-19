@@ -57,11 +57,14 @@ body {
 }
 
 .input {
-  padding: 10px;
+  width: 100%;
+  padding: 12px;
   border: 1px solid #c4c4c4;
 }
 
 .label {
+  flex-shrink: 0;
+  margin: 0 12px 0 0;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -152,6 +155,21 @@ body {
   }
 }
 
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  resize: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   .container {
@@ -169,7 +187,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 
   .container {
     max-width: 1220px;
