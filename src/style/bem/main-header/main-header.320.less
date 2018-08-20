@@ -1,0 +1,61 @@
+.main-header {
+  position: relative;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0 0 0;
+    background-color: #ffffff;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px 10px;
+  }
+
+  &__button {
+    padding: 0;
+    width: 24px;
+    height: 18px;
+    text-indent: 30px;
+    overflow: hidden;
+    border: none;
+    background-color: inherit;
+    outline: none;
+
+    &--open,
+    &--close{
+      display: block;
+      width: 25px;
+      height: 25px;
+    }
+
+    &--open {
+      background-image: url("../img/svg/mobile-menu.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--close {
+      background-image: url("../img/svg/m-close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    margin: 0;
+
+    &--close {
+      display: none;
+    }
+
+    &--open {
+      display: block;
+    }
+  }
+}

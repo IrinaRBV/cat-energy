@@ -1,0 +1,48 @@
+.category {
+  padding: 60px 50px;
+
+  &__wrap-icon {
+    top: 50%;
+    right: 50px;
+    left: auto;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+  }
+
+  &__icon {
+
+    &--cat-slim::before {
+      top: -10px;
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/cat-slim.png");
+    }
+
+    &--cat-pro::before {
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/cat-pro.png");
+    }
+  }
+
+  &__wrap-content {
+    width: 380px;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-size: 36px;
+  }
+
+  &__text {
+    margin: 0 0 60px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

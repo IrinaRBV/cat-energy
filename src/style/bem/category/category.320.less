@@ -1,0 +1,83 @@
+.category {
+  position: relative;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  &__wrap-icon {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__icon {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #68b738;
+
+    &::before {
+      position: absolute;
+      content: "";
+    }
+
+    &--cat-slim::before {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 35px;
+      height: 49px;
+      background-image: url("../img/svg/sphinx.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--cat-pro::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 68px;
+      height: 28px;
+      background-image: url("../img/svg/panther.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px 70px;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__text {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 16px;
+    line-height: 16px;
+    color: #111111;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 12px;
+      top: 50%;
+      right: -40px;
+      transform: translateY(-50%);
+      background-image: url("../img/svg/right-arrow-long.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+}

@@ -1,0 +1,318 @@
+body {
+  position: relative;
+  font-family: "Oswald", "sans-serif", "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+// input[type="checkbox"].visually-hidden,
+// input[type="radio"].visually-hidden
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.h1,
+.h2{
+  margin: 0;
+  color: #111111;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.text {
+  font-family: "Arial";
+  line-height: 18px;
+}
+
+.button {
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #68b738;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  font-family: "Oswald", "sans-serif", "Arial";
+  font-size: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  border: 1px solid #c4c4c4;
+
+    &--email {
+      padding: 12px 40px 12px 12px;
+      background-image: url("../img/svg/mail.svg");
+      background-repeat: no-repeat;
+      background-position: 93% center;
+    }
+
+    &--phone {
+      padding: 12px 40px 12px 12px;
+      background-image: url("../img/svg/phone.svg");
+      background-repeat: no-repeat;
+      background-position: 93% center;
+    }
+}
+
+.label {
+  flex-shrink: 0;
+  margin: 0 12px 0 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+
+  &--checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  &--radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.radio {
+  display: none;
+}
+
+.checkmark {
+  position: relative;
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: 0 20px 0 0;
+  background-color: #ffffff;
+  border: 1px solid #c4c4c4;
+}
+
+.checkmark-radio {
+  position: relative;
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: 0 20px 0 0;
+  background-color: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 50%;
+}
+
+.checkbox:checked ~ .label--checkbox .checkmark {
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #68b738;
+  }
+
+  &::before {
+    top: 18px;
+    left: 4px;
+    width: 12px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 16px;
+    right: 2px;
+    width: 16px;
+    transform: rotate(-45deg);
+  }
+}
+
+.radio:checked ~ .label--radio .checkmark-radio {
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  resize: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &::-webkit-input-placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &::-moz-placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &:-moz-placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &:-ms-input-placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    max-width: 810px;
+  }
+
+  .h1,
+  .h2 {
+    font-size: 60px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .input {
+    font-size: 20px;
+
+    &--email {
+      background-position: 97% center;
+    }
+
+    &--phone {
+      background-position: 97% center;
+    }
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .textarea {
+    font-size: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: 20px;
+    }
+
+    &::-moz-placeholder {
+      font-size: 20px;
+    }
+
+    &:-moz-placeholder {
+      font-size: 20px;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 20px;
+    }
+  }
+
+  .checkmark-radio {
+    height: 38px;
+    width: 38px;
+  }
+
+  .radio:checked ~ .label--radio .checkmark-radio {
+
+    &::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .checkmark {
+    height: 38px;
+    width: 38px;
+  }
+
+  .checkbox:checked ~ .label--checkbox .checkmark {
+
+    &::before,
+    &::after {
+      height: 2px;
+    }
+
+    &::before {
+      top: 22px;
+      width: 16px;
+    }
+
+    &::after {
+      top: 20px;
+      width: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .container {
+    max-width: 1220px;
+  }
+}

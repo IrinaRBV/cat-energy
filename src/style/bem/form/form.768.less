@@ -1,0 +1,67 @@
+.form {
+  width: 90%;
+  margin: 0 auto;
+
+  &__group {
+    margin: 0 0 80px;
+  }
+
+  & .form__group:last-of-type {
+    margin: 0 0 50px;
+  }
+
+  &__legend {
+    margin: 0 0 70px;
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  &__wrap {
+
+    &--target {
+      padding: 20px 0 20px 30px;
+      border: 1px solid #c4c4c4;
+    }
+
+    &--extra {
+      display: flex;
+      flex-wrap: wrap;
+
+      & .form__inner {
+        width: 45%;
+        margin: 0 0 30px;
+      }
+
+      & .form__inner:nth-child(odd) {
+        margin: 0 60px 30px 0;
+      }
+
+      & .form__inner:last-child {
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+  &__inner {
+    margin: 0 0 22px;
+  }
+
+  &__wrap {
+
+    &--flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    width: 300px;
+    margin: 0 45px 0 0;
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
