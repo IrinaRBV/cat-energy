@@ -13,7 +13,7 @@
     <div class="main-header__menu">
       <div class="main-header__wrap">
         <div class="main-header__logo logo">
-          <a class="logo__link" href="#">
+          <a class="logo__link" href="index.html">
             <picture>
               <source srcset="img/svg/logo-tablet.svg" media="(min-width: 768px)">
               <img src="img/svg/logo-mobile-header.svg" alt="logo">
@@ -40,59 +40,64 @@
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
         <form class="personal-program__form form">
-          <fieldset class="form__group">
-            <div class="form__wrap form__wrap--info">
-              <div class="form__inner">
-                <label for="cat-name" class="label">Имя:*</label>
-                <input id="cat-name" class="input" type="text">
-              </div>
-              <div class="form__inner">
-                <label for="cat-weight" class="label">Вес (кг):*</label>
-                <input id="cat-weight" class="input" type="number">
-              </div>
-              <div class="form__inner">
-                <label for="cat-age" class="label">Возраст (лет)</label>
-                <input id="cat-age" class="input" type="number">
-              </div>
+          <div class="form__grid">
+            <div class="form__col">
+              <fieldset class="form__group">
+                <div class="form__wrap form__wrap--info">
+                  <div class="form__inner">
+                    <label for="cat-name" class="label">Имя:*</label>
+                    <input id="cat-name" class="input" type="text">
+                  </div>
+                  <div class="form__inner">
+                    <label for="cat-weight" class="label">Вес (кг):*</label>
+                    <input id="cat-weight" class="input" type="number">
+                  </div>
+                  <div class="form__inner">
+                    <label for="cat-age" class="label">Возраст (лет)</label>
+                    <input id="cat-age" class="input" type="number">
+                  </div>
+                </div>
+              </fieldset>
             </div>
-          </fieldset>
-
-          <fieldset class="form__group">
-            <div class="form__wrap form__wrap--target">
-              <div class="form__inner">
-                <input id="losing-weight" class="radio" type="radio" name="food" value="losing-weight">
-                <label for="losing-weight" class="label label--radio">
-                  <span class="checkmark-radio"></span>
-                  Похудение
-                </label>
-              </div>
-              <div class="form__inner">
-                <input id="weight-gain" class="radio" type="radio" name="food" value="weight-gain">
-                <label for="weight-gain" class="label label--radio">
-                  <span class="checkmark-radio"></span>
-                  Набор массы
-                </label>
-              </div>
-              <div class="form__inner">
-                <input id="specific-weight" class="radio" type="radio" name="food" value="specific-weight">
-                <label for="specific-weight" class="label label--radio">
-                  <span class="checkmark-radio"></span>
-                  Не знаю (нужен ваш совет)
-                </label>
-              </div>
+            <div class="form__col">
+              <fieldset class="form__group">
+                <div class="form__wrap form__wrap--target">
+                  <div class="form__inner">
+                    <input id="losing-weight" class="radio" type="radio" name="food" value="losing-weight">
+                    <label for="losing-weight" class="label label--radio">
+                      <span class="checkmark-radio"></span>
+                      Похудение
+                    </label>
+                  </div>
+                  <div class="form__inner">
+                    <input id="weight-gain" class="radio" type="radio" name="food" value="weight-gain">
+                    <label for="weight-gain" class="label label--radio">
+                      <span class="checkmark-radio"></span>
+                      Набор массы
+                    </label>
+                  </div>
+                  <div class="form__inner">
+                    <input id="specific-weight" class="radio" type="radio" name="food" value="specific-weight">
+                    <label for="specific-weight" class="label label--radio">
+                      <span class="checkmark-radio"></span>
+                      Не знаю (нужен ваш совет)
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
             </div>
-          </fieldset>
+          </div>
 
           <fieldset class="form__group">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <div class="form__wrap form__wrap--contact">
               <div class="form__inner">
                 <label for="email" class="label">E-mail:*</label>
-                <input id="email" class="input" type="email">
+                <input id="email" class="input input--email" type="email">
               </div>
               <div class="form__inner">
                 <label for="phone" class="label">Телефон:*</label>
-                <input id="phone" class="input" type="tel">
+                <input id="phone" class="input input--phone" type="tel">
               </div>
             </div>
           </fieldset>
@@ -136,7 +141,7 @@
             </div>
           </fieldset>
 
-          <div class="form__wrap">
+          <div class="form__wrap form__wrap--flex">
             <button class="form__button button" type="submit">Отправить заявку</button>
             <p class="form__text text">* — Обязательные поля</p>
           </div>

@@ -54,12 +54,31 @@ body {
   box-sizing: border-box;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 
 .input {
   width: 100%;
   padding: 12px;
+  font-family: "Oswald", "sans-serif", "Arial";
+  font-size: 16px;
+  color: #222222;
+  text-transform: uppercase;
   border: 1px solid #c4c4c4;
+
+    &--email {
+      padding: 12px 40px 12px 12px;
+      background-image: url("../img/svg/mail.svg");
+      background-repeat: no-repeat;
+      background-position: 93% center;
+    }
+
+    &--phone {
+      padding: 12px 40px 12px 12px;
+      background-image: url("../img/svg/phone.svg");
+      background-repeat: no-repeat;
+      background-position: 93% center;
+    }
 }
 
 .label {
@@ -141,8 +160,7 @@ body {
 
 .radio:checked ~ .label--radio .checkmark-radio {
 
-  &::before,
-  &::after {
+  &::before {
     position: absolute;
     content: "";
     top: 50%;
@@ -160,9 +178,38 @@ body {
   height: 150px;
   padding: 15px;
   resize: none;
+  text-transform: uppercase;
   box-sizing: border-box;
 
   &::placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &::-webkit-input-placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &::-moz-placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &:-moz-placeholder {
+    font-family: "Oswald", "sans-serif", "Arial";
+    font-size: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &:-ms-input-placeholder {
     font-family: "Oswald", "sans-serif", "Arial";
     font-size: 16px;
     color: #222222;
@@ -184,6 +231,82 @@ body {
   .text {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .input {
+    font-size: 20px;
+
+    &--email {
+      background-position: 97% center;
+    }
+
+    &--phone {
+      background-position: 97% center;
+    }
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .textarea {
+    font-size: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: 20px;
+    }
+
+    &::-moz-placeholder {
+      font-size: 20px;
+    }
+
+    &:-moz-placeholder {
+      font-size: 20px;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 20px;
+    }
+  }
+
+  .checkmark-radio {
+    height: 38px;
+    width: 38px;
+  }
+
+  .radio:checked ~ .label--radio .checkmark-radio {
+
+    &::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .checkmark {
+    height: 38px;
+    width: 38px;
+  }
+
+  .checkbox:checked ~ .label--checkbox .checkmark {
+
+    &::before,
+    &::after {
+      height: 2px;
+    }
+
+    &::before {
+      top: 22px;
+      width: 16px;
+    }
+
+    &::after {
+      top: 20px;
+      width: 22px;
+    }
   }
 }
 
